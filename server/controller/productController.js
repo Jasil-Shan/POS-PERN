@@ -15,7 +15,7 @@ export async function addProduct(req, res) {
 
     }
 }
-
+ 
 export async function getProducts(req, res) {
     try {
 
