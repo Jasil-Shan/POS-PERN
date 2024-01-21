@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import axios from 'axios';
-import UserRouter from './routes/UserRouter';
+import POSroutes from './routes/Routes';
 
 function App() {
   axios.defaults.baseURL = "http://localhost:3000"
@@ -9,7 +9,7 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path='/*' element={<UserRouter />} />
+          <Route path='/*' element={<POSroutes />} />
         </Routes>
       </BrowserRouter>
 

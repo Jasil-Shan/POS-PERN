@@ -1,15 +1,16 @@
-// import { Routes, Route } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
+import { Home } from '../components/Home/Home'
 
 
 
 
-// const POSroutes = () => {
+const POSroutes = () => {
 
-//     return (
-//         <Routes >
-//             <Route path='/' element={<Home />} />
-//         </Routes>
-//     )
-// }
+    return (
+        <Routes >
+            <Route path='/' element={<Home />} />
+        </Routes>
+    )
+}
 
-// export default POSroutes
+export default POSroutes
