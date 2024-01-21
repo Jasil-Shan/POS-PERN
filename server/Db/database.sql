@@ -12,9 +12,8 @@ CREATE TABLE offers (
   offer_id SERIAL PRIMARY KEY,
   offer_type VARCHAR(50) NOT NULL,
   discount_value DECIMAL,
-  free_product_id INT
+  free_product_id INT REFERENCES products(product_id)
 );
-
 
 CREATE TABLE orders (
   order_id SERIAL PRIMARY KEY,
