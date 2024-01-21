@@ -15,6 +15,7 @@ CREATE TABLE offers (
   free_product_id INT
 );
 
+
 CREATE TABLE orders (
   order_id SERIAL PRIMARY KEY,
   product_id INT REFERENCES products(product_id),
